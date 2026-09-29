@@ -1,0 +1,23 @@
+[project]
+name = "ai-coding-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Greshma", email = "greshmamotupalli9@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-core>=1.5.6",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.11",
+    "langgraph-checkpoint-sqlite>=3.1.1",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+ai-coding-agent = "ai_coding_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
